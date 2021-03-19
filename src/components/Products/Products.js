@@ -11,7 +11,7 @@ const {
   loading
 } = styles;
 
-const Products = ({ products = [], toggleCartSideBar, addItemToCart }) => {
+const Products = ({ products = [], toggleCartSideBar, addItemToCart, currency }) => {
   return (
     <div className={productListWrapper}>
       <div className={productListHeader}>
@@ -29,7 +29,7 @@ const Products = ({ products = [], toggleCartSideBar, addItemToCart }) => {
             />
             <p>{product.title}</p>
             <p>
-              From <b>${product.price}</b>
+              From <b>{currency}{product.price}</b>
             </p>
             <button
               role="button"
@@ -52,6 +52,7 @@ Products.propTypes = {
   products: PropTypes.array,
   toggleCartSideBar: PropTypes.func,
   addItemToCart: PropTypes.func,
+  currency: PropTypes.string
 };
 
 export default Products;

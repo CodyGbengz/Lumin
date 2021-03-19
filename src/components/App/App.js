@@ -112,6 +112,7 @@ const App = () => {
         products={products}
         toggleCartSideBar={toggleCartSideBar}
         addItemToCart={addToCart}
+        currency={currency}
       />
       {cartState && (
         <Cart
