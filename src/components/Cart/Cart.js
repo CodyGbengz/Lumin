@@ -98,7 +98,7 @@ const Cart = ({
       <div className={cartItemsSubtotalWrapper}>
         <div className={cartItemsSubtotalContainer}>
           <p>Subtotal</p>
-          <p>{items.reduce((acc, curr) => acc + curr.price, 0)}</p>
+          <p>{currency}{items.reduce((acc, curr) => acc + curr.price, 0)}</p>
           <button className={subscriptionButton}>
             MAKE THIS A SUBSCRIPTION (SAVE 20%)
           </button>
