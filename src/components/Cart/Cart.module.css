@@ -1,0 +1,138 @@
+.cartWrapper {
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    background-color: rgb(75, 85, 72, 0.5);
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+  }
+  
+  .cartContainer {
+    text-align: center;
+    width: 30%;
+    background: rgb(242, 243, 240);
+    padding: 20px;
+    position: relative;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .cartContainer {
+      padding: 10px;
+      width: 100%;
+    }
+  }
+  .currencyDropdown {
+    border: none;
+    height: 30px;
+    padding: 5px;
+    width: 70px;
+  }
+  
+  .cartItemsContainerHeader {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    justify-content: flex-start;
+  }
+  
+  .backButton {
+    padding-top: 17px;
+  }
+  
+  .cartHeaderText {
+    width: 90%;
+  }
+  
+  .cartItemsContainer {
+    height: 77%;
+    overflow-y: auto;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .cartItemsContainer {
+      height: 58%;
+    }
+  }
+  .cartItemCard {
+    background: white;
+    height: 115px;
+    padding: 5px 15px;
+    margin: 10px 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  
+  .cartItemTitleContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .cartItemQuantity {
+    border: 1px solid grey;
+    height: 25px;
+    width: 65px;
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2px
+  
+  }
+  
+  .quantityButton {
+    background-color: inherit;
+    border: none;
+    font-size: 16px;
+  
+  }
+  
+  /* .quantity-button-decrement {
+    margin-left: -6px;
+    margin-right: 9px;
+  }
+  
+  .quantity-button-increment {
+    margin-left: 9px;
+    margin-right: -6px;
+  } */
+  
+  .cartImageContainer {
+    padding-right: 50px;
+    margin-top: -20px;
+  }
+  .cartImageContainer > img {
+    width: 35px;
+  }
+  
+  .cartItemsSubtotalWrapper {
+    /* position: absolute; */
+    /* bottom: 5px; */
+    /* width: 96% */
+  }
+  
+  .cartItemsSubtotalContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    border-top: 1px solid black;
+  }
+  
+  .subscriptionButton {
+    color: rgb(75 85 72);
+    background-color: white;
+    border: 1px solid rgb(75 85 72);
+    height: 60px;
+    margin-bottom: 15px;
+    width: 100%
+  }
+  
+  .checkoutButton {
+    color: white;
+    height: 60px;
+    width: 100%;
+    background-color: rgb(75 85 72);;
+  }
+  
