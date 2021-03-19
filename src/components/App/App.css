@@ -1,0 +1,8 @@
+
+body {
+  margin: 0;
+}
+
+.overlay-open {
+  overflow-y: hidden;
+}
