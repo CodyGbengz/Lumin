@@ -11,14 +11,19 @@ const {
   loading
 } = styles;
 
-const Products = ({ products = [], toggleCartSideBar, addItemToCart, currency }) => {
-  return (
+const Products = ({
+    products = [],
+    toggleCartSideBar,
+    addItemToCart, 
+    currency 
+}) => (
     <div className={productListWrapper}>
       <div className={productListHeader}>
         <h1>All Products</h1>
         <p>A 360 look at Lumin</p>
       </div>
-      {products.length === 0 && <div className={loading}><h1>Loading...</h1></div>}
+      {products.length === 0 && 
+      <div className={loading}><h1>Loading...</h1></div>}
       <div className={productListContainer}>
         {products.map((product) => (
           <div key={product.id} className={productCard}>
@@ -46,7 +51,6 @@ const Products = ({ products = [], toggleCartSideBar, addItemToCart, currency })
       </div>
     </div>
   );
-};
 
 Products.propTypes = {
   products: PropTypes.array,
